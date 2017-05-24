@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RepetitiveTasksExample</string>
+    <string name="locations_empty_text">There are not locations.</string>
+    <string name="main_btn_start_job_text">Start Job</string>
+</resources>
