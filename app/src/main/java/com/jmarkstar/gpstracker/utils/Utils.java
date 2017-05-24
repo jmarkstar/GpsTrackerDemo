@@ -1,4 +1,4 @@
-package com.jmarkstar.gpstrackerexample.util;
+package com.jmarkstar.gpstracker.utils;
 
 /**
  * Created by jmarkstar on 23/05/2017.

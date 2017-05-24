@@ -1,4 +1,4 @@
-package com.jmarkstar.gpstrackerexample.model;
+package com.jmarkstar.gpstracker.models;
 
 import java.util.Date;
 
@@ -6,6 +6,12 @@ import java.util.Date;
  * Created by jmarkstar on 23/05/2017.
  */
 public class LocationModel {
+
+    public static final String TABLE_NAME = "location";
+    public static final String ID_FIELD = "_id";
+    public static final String LATITUDE_FIELD = "longitude";
+    public static final String LONGITUDE_FIELD = "latitude";
+    public static final String DATE_FIELD = "date";
 
     private long id;
     private double latitude;

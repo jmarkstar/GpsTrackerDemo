@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.jmarkstar.gpstrackerexample"
+        applicationId "com.jmarkstar.gpstracker"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
@@ -25,9 +25,12 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
+    //recyclerview para listar las localizaciones almacenadas en la db.
     compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    //play-services-location es una librería con mejor performance para obtener la localización.
+    compile 'com.google.android.gms:play-services-location:10.2.1'
 
     testCompile 'junit:junit:4.12'
 }
