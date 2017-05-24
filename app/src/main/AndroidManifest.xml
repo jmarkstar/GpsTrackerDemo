@@ -7,6 +7,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,8 +30,7 @@
         </activity>
 
         <receiver
-            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
-            android:name=".broadcastreceivers.StartJobBroadcastReceiver"
+            android:name=".broadcastreceivers.StartJobReceiver"
             android:exported="false"
             android:enabled="true" >
             <intent-filter>
@@ -38,6 +40,15 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name=".broadcastreceivers.AlarmWakefulReceiver"/>
+
+        <service android:name=".services.GpsTrackerIntentService"/>
+
+        <service android:name=".services.GpsTrackerWakefulService"/>
+
+        <service android:name=".services.GpsTrackerJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
     </application>
 
 </manifest>
