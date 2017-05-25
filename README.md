@@ -6,4 +6,11 @@ localización para version de android menores a Android Lollipop(21), para versi
 se esta usando JobScheduler, el JobScheduler funciona muy bien en android LOLLIPOP Y M pero en 
 las versiones de android N(24 y 25) JobScheduler soportar como tiempo minimo periodico de 15 minutos.
 
-En proceso...
+Despues de que el servicio hay obtenido la localización, mediante el LocalBroadcastReciever envía los datos
+al activity para poder refrescar la lista.
+
+ScreenShots
+
+![](/screenshots/Screenshot1.png)
+
+![](/screenshots/Screenshot2.png)
