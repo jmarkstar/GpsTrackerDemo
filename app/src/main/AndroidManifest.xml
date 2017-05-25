@@ -21,7 +21,7 @@
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.jmarkstar.gpstracker.activities.LocationsActivity">
+        <activity android:name="com.jmarkstar.gpstracker.ui.LocationsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +30,7 @@
         </activity>
 
         <receiver
-            android:name=".broadcastreceivers.StartJobReceiver"
+            android:name=".tracker.StartJobReceiver"
             android:exported="false"
             android:enabled="true" >
             <intent-filter>
@@ -40,13 +40,13 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".broadcastreceivers.AlarmWakefulReceiver"/>
+        <receiver android:name=".tracker.AlarmWakefulReceiver"/>
 
-        <service android:name=".services.GpsTrackerIntentService"/>
+        <service android:name=".tracker.GpsTrackerIntentService"/>
 
-        <service android:name=".services.GpsTrackerWakefulService"/>
+        <service android:name=".tracker.GpsTrackerWakefulService"/>
 
-        <service android:name=".services.GpsTrackerJobService"
+        <service android:name=".tracker.GpsTrackerJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="true"/>
     </application>

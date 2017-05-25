@@ -4,4 +4,5 @@
     <string name="main_btn_start_job_text">Start Job</string>
     <string name="locations_lng_label">Lng:</string>
     <string name="locations_lat_label">Lat:</string>
+    <string name="locations_running_text">Running</string>
 </resources>

@@ -12,8 +12,8 @@ import android.os.Build;
 import android.os.SystemClock;
 import android.support.annotation.RequiresApi;
 import android.util.Log;
-import com.jmarkstar.gpstracker.broadcastreceivers.AlarmWakefulReceiver;
-import com.jmarkstar.gpstracker.services.GpsTrackerJobService;
+import com.jmarkstar.gpstracker.tracker.AlarmWakefulReceiver;
+import com.jmarkstar.gpstracker.tracker.GpsTrackerJobService;
 
 /**
  * Created by jmarkstar on 23/05/2017.

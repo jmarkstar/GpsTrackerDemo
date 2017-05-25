@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".activities.LocationsActivity">
+    tools:context=".ui.LocationsActivity">
 
     <Button android:text="@string/main_btn_start_job_text"
         android:id="@+id/btn_start_job"

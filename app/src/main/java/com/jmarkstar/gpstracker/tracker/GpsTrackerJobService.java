@@ -1,4 +1,4 @@
-package com.jmarkstar.gpstracker.services;
+package com.jmarkstar.gpstracker.tracker;
 
 import android.annotation.TargetApi;
 import android.app.job.JobParameters;

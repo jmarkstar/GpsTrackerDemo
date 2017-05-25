@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
+    <TextView android:id="@+id/tv_date"
         android:layout_marginTop="6dp"
         android:layout_below="@+id/tv_label_lat"
         android:layout_marginStart="12dp"

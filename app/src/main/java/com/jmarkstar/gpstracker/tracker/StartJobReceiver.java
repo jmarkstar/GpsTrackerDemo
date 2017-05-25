@@ -1,4 +1,4 @@
-package com.jmarkstar.gpstracker.broadcastreceivers;
+package com.jmarkstar.gpstracker.tracker;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

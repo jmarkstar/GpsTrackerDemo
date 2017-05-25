@@ -1,4 +1,4 @@
-package com.jmarkstar.gpstracker.services;
+package com.jmarkstar.gpstracker.tracker;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.jmarkstar.gpstracker.activities.LocationsActivity;
+import com.jmarkstar.gpstracker.ui.LocationsActivity;
 import com.jmarkstar.gpstracker.database.dao.LocationDao;
 import com.jmarkstar.gpstracker.models.LocationModel;
 import java.util.Date;
