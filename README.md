@@ -1,5 +1,5 @@
 
-#GpsTrackerDemo
+# GpsTrackerDemo
 
 Se esta usando AlarmManager para despertar al servicio que obtendrá la 
 localización para version de android menores a Android Lollipop(21), para versiones igual y mayores
@@ -11,6 +11,5 @@ al activity para poder refrescar la lista.
 
 ScreenShots
 
-![](/screenshots/Screenshot1.png)
-
-![](/screenshots/Screenshot2.png)
+<img src="/screenshots/Screenshot1.png" width="400"/>
+<img src="/screenshots/Screenshot2.png" width="400"/>
