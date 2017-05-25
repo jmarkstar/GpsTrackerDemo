@@ -52,10 +52,12 @@ public class Utils {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
             jobInfo = new JobInfo.Builder(JOB_ID, serviceName)
                     .setPeriodic(Constants.TIME_INTERVAL_FOR_N)
+                    .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
                     .build();
         }else{
             jobInfo = new JobInfo.Builder(JOB_ID, serviceName)
                     .setPeriodic(Constants.TIME_INTERVAL)
+                    .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
                     .build();
         }
         jobScheduler.schedule(jobInfo);
