@@ -2,4 +2,6 @@
     <string name="app_name">GPS Tracker</string>
     <string name="locations_empty_text">There are not locations.</string>
     <string name="main_btn_start_job_text">Start Job</string>
+    <string name="locations_lng_label">Lng:</string>
+    <string name="locations_lat_label">Lat:</string>
 </resources>

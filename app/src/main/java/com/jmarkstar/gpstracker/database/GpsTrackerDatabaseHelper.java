@@ -16,9 +16,9 @@ public final class GpsTrackerDatabaseHelper extends SQLiteOpenHelper {
     private StringBuffer SQL_CREATE_TABLE_LOCATION = new StringBuffer()
             .append("CREATE TABLE IF NOT EXISTS "+ LocationModel.TABLE_NAME+" ( ")
             .append(LocationModel.ID_FIELD+" INTEGER PRIMARY KEY AUTOINCREMENT, ")
-            .append(LocationModel.ID_FIELD+" REAL, ")
-            .append(LocationModel.ID_FIELD+" REAL, ")
-            .append(LocationModel.ID_FIELD+" INTEGER )");
+            .append(LocationModel.LATITUDE_FIELD+" REAL, ")
+            .append(LocationModel.LONGITUDE_FIELD+" REAL, ")
+            .append(LocationModel.DATE_FIELD+" INTEGER )");
 
     private final StringBuffer SQL_DELETE_TABLE_LOCATION = new StringBuffer()
             .append("DROP TABLE IF EXISTS " + LocationModel.TABLE_NAME);

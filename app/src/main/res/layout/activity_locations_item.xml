@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <ImageView android:src="@drawable/ic_location"
+        android:id="@+id/iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView android:text="@string/locations_lat_label"
+        android:textStyle="bold"
+        android:id="@+id/tv_label_lat"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text="12.000007"
+        android:id="@+id/tv_latitude"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/tv_label_lat"
+        android:layout_toEndOf="@+id/tv_label_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text="@string/locations_lng_label"
+        android:textStyle="bold"
+        android:id="@+id/tv_label_lng"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_latitude"
+        android:layout_toEndOf="@+id/tv_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:text="12.000007"
+        android:id="@+id/tv_longitude"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/tv_label_lng"
+        android:layout_toEndOf="@+id/tv_label_lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/tv_label_lat"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:text="12 de Agosto del 2015 45:89"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

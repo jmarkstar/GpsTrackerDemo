@@ -21,6 +21,5 @@ public class StartJobReceiver extends BroadcastReceiver {
             Utils.setJobScheduler(context);
         else
             Utils.setAlarmManager(context);
-
     }
 }

@@ -43,17 +43,26 @@ public class LocationDao {
 
     private List<LocationModel> convertCursorToList(Cursor mCursor){
         List<LocationModel> locations = new ArrayList<>();
-        if(mCursor.moveToFirst()){
-            do {
-                LocationModel locationItem = new LocationModel();
-                locationItem.setId(mCursor.getInt(mCursor.getColumnIndex(LocationModel.ID_FIELD)));
-                locationItem.setLatitude(mCursor.getDouble(mCursor.getColumnIndex(LocationModel.LATITUDE_FIELD)));
-                locationItem.setLongitude(mCursor.getDouble(mCursor.getColumnIndex(LocationModel.LONGITUDE_FIELD)));
-                locationItem.setDate(new Date(mCursor.getLong(mCursor.getColumnIndex(LocationModel.DATE_FIELD))));
+        try{
+            if(mCursor.moveToFirst()){
+                do {
+                    LocationModel locationItem = new LocationModel();
+                    locationItem.setId(mCursor.getInt(mCursor.getColumnIndex(LocationModel.ID_FIELD)));
+                    locationItem.setLatitude(mCursor.getDouble(mCursor.getColumnIndex(LocationModel.LATITUDE_FIELD)));
+                    locationItem.setLongitude(mCursor.getDouble(mCursor.getColumnIndex(LocationModel.LONGITUDE_FIELD)));
+                    locationItem.setDate(new Date(mCursor.getLong(mCursor.getColumnIndex(LocationModel.DATE_FIELD))));
 
-                locations.add(locationItem);
-            }while (mCursor.moveToNext());
+                    locations.add(locationItem);
+                }while (mCursor.moveToNext());
+            }
+        }finally {
+            if (mCursor != null && !mCursor.isClosed())
+                mCursor.close();
         }
         return locations;
+    }
+
+    public void closeDataBase(){
+        mSQLiteDatabase.close();
     }
 }
