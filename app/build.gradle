@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.jmarkstar.gpstracker"
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion 21
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -20,17 +20,23 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
+
+
+    implementation "androidx.appcompat:appcompat:1.2.0"
 
     //recyclerview para listar las localizaciones almacenadas en la db.
-    compile 'com.android.support:recyclerview-v7:25.3.1'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
 
     //play-services-location es una librería con mejor performance para obtener la localización.
-    compile 'com.google.android.gms:play-services-location:10.2.1'
+    implementation "com.google.android.gms:play-services-location:17.1.0"
 
-    testCompile 'junit:junit:4.12'
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+
+    implementation "androidx.legacy:legacy-support-core-utils:1.0.0"
+
+    testImplementation "junit:junit:4.13.1"
+
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 }

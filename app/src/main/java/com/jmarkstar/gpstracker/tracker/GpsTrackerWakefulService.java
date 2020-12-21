@@ -2,7 +2,7 @@ package com.jmarkstar.gpstracker.tracker;
 
 import android.content.Intent;
 import android.os.SystemClock;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 
 /** Este intent service será usando junto al AlarmManager para version de android menores a 5.0.

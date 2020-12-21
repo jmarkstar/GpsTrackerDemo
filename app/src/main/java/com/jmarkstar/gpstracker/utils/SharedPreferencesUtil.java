@@ -11,7 +11,7 @@ public class SharedPreferencesUtil {
     private static final String PREF_NAME = "GPS_TRACKER_PREF";
     private static final String PREF_JOB_FLAG = "job_flag";
 
-    private SharedPreferences mSharedPreferences;
+    private final SharedPreferences mSharedPreferences;
 
     public SharedPreferencesUtil(Context context){
         mSharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);

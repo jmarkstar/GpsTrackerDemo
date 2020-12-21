@@ -3,9 +3,8 @@ package com.jmarkstar.gpstracker.tracker;
 import android.content.Context;
 import android.content.Intent;
 import android.os.SystemClock;
-import android.support.v4.content.WakefulBroadcastReceiver;
+import androidx.legacy.content.WakefulBroadcastReceiver;
 import android.util.Log;
-import com.jmarkstar.gpstracker.tracker.GpsTrackerWakefulService;
 
 /**
  * Created by jmarkstar on 24/05/2017.
