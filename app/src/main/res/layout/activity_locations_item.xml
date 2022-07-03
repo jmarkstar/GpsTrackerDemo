@@ -46,8 +46,8 @@
         android:layout_below="@+id/tv_label_lat"
         android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/iv_icon"
-        android:text="12 de Agosto del 2015 45:89"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:text="12 de Agosto del 2015 45:89"/>
 
 </RelativeLayout>
